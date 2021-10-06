@@ -73,6 +73,34 @@ body {
   color: #1f2937;
   font-weight: bolder;
   display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 32px;
+}
+
+.information img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+.information ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.information.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 10px;
 }
 
 .quote {
@@ -101,10 +129,45 @@ body {
 
 .calltoaction {
   background-color: white;
-  font-size: 36px;
-  color: #1f2937;
-  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
   display: flex;
+}
+
+.calloutside {
+  background-color: #3882f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 32px;
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.calloutside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 18px;
+}
+
+.callcontainer {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.calltitle {
+  font-size: 36px;
+  color: white;
+  font-weight: bolder;
+}
+
+.calltext {
+  font-size: 18px;
+  color: white;
 }
 
 button {
@@ -112,5 +175,23 @@ button {
   color: white;
   border-radius: 8px;
   padding: 5px;
-  border: white;
+  border: 2px solid white;
+}
+
+.modal {
+  background: white;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal:hover {
+  background: #1f2937;
 }
