@@ -80,9 +80,9 @@ body {
 }
 
 .information img {
-  max-width: 200px;
-  height: auto;
-  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .information ul {
